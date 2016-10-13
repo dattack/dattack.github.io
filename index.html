@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>dbtools powered by dattack!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lighter.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand nav-link" href="#top"><img src="img/logo.png"></a>
+<a target="_blank" href="https://github.com/dattack/dbtools"><img style="position: absolute; top: 0; right: 0; border: 1;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+        </div> <!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#top" class="nav-link">Download</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+<!--            <li><a href="#faqs" class="nav-link">FAQs</a></li>-->
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+          </ul>
+        </div> <!-- /.navbar-collapse -->
+      </div> <!-- /.container -->
+    </nav> <!-- /.navbar -->
+
+    <div id="top" class="jumbotron">
+      <div class="container">
+        <h1>The right tools</h1>
+        <h2>Discover the ultimate database tools</h2>
+        <p><a class="btn btn-primary btn-lg" href="download/dbtools-0.1-SNAPSHOT-bin.zip">Download<span class="glyphicon glyphicon-circle-arrow-down"></span></a></p>
+      </div> <!-- /.container -->
+    </div> <!-- /.jumbotron -->
+
+    <div class="container">
+      <h3 id="features" class="subhead">Features</h3>
+      <div class="row benefits">
+        <div class="col-md-4 col-sm-6 benefit">
+          <div class="benefit-ball">
+            <span class="glyphicon glyphicon-home"></span>
+          </div>
+          <h3>Free for everyone, OpenSource</h3>
+          <p>Distributed under the Apache 2 license.</p>
+        </div> <!-- /.benefit -->
+
+        <div class="col-md-4 col-sm-6 benefit">
+          <div class="benefit-ball">
+            <span class="glyphicon glyphicon-cloud"></span>
+          </div>
+          <h3>Distributed software, centralized management</h3>
+          <p>Comming-soon</p>
+        </div> <!-- /.benefit -->
+
+        <div class="col-md-4 col-sm-6 benefit">
+          <div class="benefit-ball">
+            <span class="glyphicon glyphicon-bell"></span>
+          </div>
+          <h3>Command-line &amp; platform-independent tools</h3>
+          <p>100% pure Java designed to measure performance.</p>
+        </div>
+      </div>
+    </div>
+      <div class="container">
+        <h3 id="about" class="subhead">About Us</h3>
+        <div class="row about">
+          <div class="col-md-2 col-md-offset-2 text-center">
+            <img src="img/about.jpg">
+          </div>
+          <div class="col-md-7 col-md-offset-1">
+            <p>
+              The Dattack team is made up of software engineers who for years have built software for everyone from consumers to large businesses. It was finally time for us to build software for ourselves and for other people just like us.
+            </p>
+            <p>
+              Our goal is to identify those software programs that you need to simplify your work life. We make software that is more useful, more functional and more secure than you are used to.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+      <h3 id="contact" class="subhead">Contact us</h3>
+      <div class="row faqs">
+        <div class="col-md-2 col-md-offset-2 text-center">
+            <img src="img/contact.jpg">
+        </div>
+        <div class="col-md-7 col-md-offset-1">
+          <h4>Questions? Want to get involved?</h4>
+          <p>You can contact us using information below:</p>
+          <p><img src="img/icon_email.png"> <a href="mailto:support@dattack.com">support@dattack.com</a></p>
+          <p><img src="img/icon_twitter.png"> <a href="https://twitter.com/dattackteam">dattack team</a></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container clearfix">
+        <p class="pull-left">
+          Copyright &copy; dattack team 2016
+        </p>
+        <p class="pull-right">
+          a template from <a href="http://coverstrap.com">Coverstrap</a>
+        </p>
+      </div> <!-- /.container -->
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(".nav-link").click(function(e) {
+        e.preventDefault();
+        var link = $(this);
+        var href = link.attr("href");
+        $("html,body").animate({scrollTop: $(href).offset().top - 80}, 500);
+        link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
+      });
+    </script>
+  </body>
+</html>
